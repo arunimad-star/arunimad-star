@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s \"http://localhost:3000/api/av-multiples?ticker=AAPL&metric=pe\")",
+      "Bash(curl -s \"http://localhost:3000/api/finnhub-earnings-detail?ticker=AAPL\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('history entries:', len\\(d.get\\('history',[]\\)\\), '| first:', d.get\\('history',[]\\)[0] if d.get\\('history'\\) else 'none'\\)\")"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.env.local
+data/*.csv
+data/*.xls
+data/*.xlsx
+data/prices-cache.json
