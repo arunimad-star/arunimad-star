@@ -2251,7 +2251,7 @@ export default function Home() {
                       }}
                     >
                       <span style={{ fontSize: '0.66rem', fontWeight: 700, whiteSpace: 'nowrap' }}>{ps.label}</span>
-                      <span style={{ fontSize: '0.68rem', fontWeight: 400, color: isActive ? 'rgba(255,255,255,0.82)' : side === 'long' ? '#166534' : '#991b1b', lineHeight: 1.35, whiteSpace: 'normal' }}>{ps.desc}</span>
+                      <span style={{ fontSize: '0.58rem', fontWeight: 400, color: isActive ? 'rgba(255,255,255,0.82)' : side === 'long' ? '#166534' : '#991b1b', lineHeight: 1.35, whiteSpace: 'normal' }}>{ps.desc}</span>
                     </button>
                   )
                 })}
