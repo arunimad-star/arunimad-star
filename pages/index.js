@@ -642,7 +642,7 @@ export default function Home() {
     try {
       const res = await fetch('/companies.json')
       if (!res.ok) {
-        setError('Failed to load company list')
+        setError(`Failed to load company list (${res.status} ${res.statusText})`)
         return
       }
       const companies = await res.json()
