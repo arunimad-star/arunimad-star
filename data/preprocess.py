@@ -222,4 +222,7 @@ with open('data/vsv3.csv', encoding='utf-8-sig', errors='replace') as f:
 with open('data/companies.json', 'w') as f:
     json.dump(companies, f, separators=(',', ':'))
 
-print(f'Done: {len(companies)} companies written to data/companies.json')
+with open('public/companies.json', 'w') as f:
+    json.dump(companies, f, separators=(',', ':'))
+
+print(f'Done: {len(companies)} companies written to data/companies.json and public/companies.json')
